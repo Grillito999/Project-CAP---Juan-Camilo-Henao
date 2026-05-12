@@ -1,0 +1,20 @@
+{
+  "name": "cap_project_master",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {},
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@cap-js/cds-types": "^0.16.0",
+    "@sap/cds": "^9.9.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2.4.0"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "private": true
+  
+}
