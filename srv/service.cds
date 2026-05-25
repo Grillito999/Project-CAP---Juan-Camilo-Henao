@@ -12,6 +12,5 @@ service my_service {
     entity Sales            as projection on entities.Sales;
     entity VH_Categories    as projection on entities.Categories; // Value help
     entity VH_SubCategories as projection on entities.SubCategories; // Value help
-
 // con $expand=tosubCategories podemos ver las asociaciones
 };

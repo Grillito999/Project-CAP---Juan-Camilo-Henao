@@ -1,9 +1,11 @@
-using {my_service as service} from '../service'; // Se referencia el servicio al cual se le realiza la publicación
+// Se referencia el servicio al cual se le realiza la publicación
+using {my_service as service} from '../service';
 
 annotate service.Products with {
 
     product     @title            : 'Product';
     productName @title            : 'Product Name';
+    decription  @title            : 'Description';
     category    @title            : 'Category';
     subCategory @title            : 'SubCategory';
     status      @title            : 'Status';
@@ -11,55 +13,59 @@ annotate service.Products with {
     price       @title: 'Price'  @Measures.ISOCurrency: currency;
     currency    @Common.IsCurrency: true;
 
-
 };
 
 
-annotate service.Products with @( // se referencia la entidad a la cual le vamos a implementar las anotaciones FIORI
+annotate service.Products with @(
 
-UI.LineItem: [
-
-    {
-        $Type: 'UI.DataField',
-        Value: product,
+    UI.DataPoint #Rating: {
+        Value        : rating,
+        Criticality  : {
+            High  : 5,
+            Medium: 3,
+            Low   : 0
+        },
+        Visualization: #Rating
     },
 
-    {
-        $Type: 'UI.DataField',
-        Value: productName,
-    },
+    UI.LineItem         : [ // se referencia la entidad a la cual le vamos a implementar las anotaciones FIORI
 
-    {
-        $Type: 'UI.DataField',
-        Value: category,
-    },
+        {
+            $Type: 'UI.DataField',
+            Value: product,
+        },
 
-    {
-        $Type: 'UI.DataField',
-        Value: subcCategory ,
-    },
+        {
+            $Type: 'UI.DataField',
+            Value: productName,
+        },
 
-    {
-        $Type : 'UI.DataField',
-        Value : status,
-    },
+        {
+            $Type: 'UI.DataField',
+            Value: category,
+        },
 
-     {
-        $Type : 'UI.DataField',
-        Value : rating,
-    },
+        {
+            $Type: 'UI.DataField',
+            Value: subCategory,
+        },
 
-    {
-        $Type : 'UI.DataField',
-        Value : price,
-    },
+        {
+            $Type: 'UI.DataField',
+            Value: status,
+        },
 
-    {
-        $Type : 'UI.DataField',
-        Value : currency,
-    },
+        {
+            $Type: 'UI.DataField',
+            Value: price,
+        },
 
-]
+        {
+            $Type : 'UI.DataFieldForAnnotation',
+            Label : 'Rating',
+            Target: '@UI.DataPoint#Rating'
+        },
 
+    ],
 
 );
