@@ -1,26 +1,4 @@
 ID,rating,date,reviewText,product_ID,createdAt,createdBy,modifiedAt,modifiedBy
-7c9b3c64-52d4-5e30-b2c7-80f64c38c201,5.00,10/05/2026,Excelente producto lo recomiendo totalmente,6b8a2b53-41c3-4d29-a1b6-79e53b27b101,2026-05-10T12:00:00.000Z,user1,2026-05-10T12:00:00.000Z,user1
-7c9b3c64-52d4-5e30-b2c7-80f64c38c202,4.50,11/05/2026,Muy buena laptop aunque se calienta un poco bajo carga extrema,6b8a2b53-41c3-4d29-a1b6-79e53b27b101,2026-05-11T09:15:00.000Z,user2,2026-05-11T09:15:00.000Z,user2
-7c9b3c64-52d4-5e30-b2c7-80f64c38c203,4.00,12/05/2026,Pantalla increible pero la bateria dura menos de lo esperado,6b8a2b53-41c3-4d29-a1b6-79e53b27b102,2026-05-12T14:30:00.000Z,user3,2026-05-12T14:30:00.000Z,user3
-7c9b3c64-52d4-5e30-b2c7-80f64c38c204,5.00,13/05/2026,El celular llego en perfectas condiciones.,6b8a2b53-41c3-4d29-a1b6-79e53b27b102,2026-05-13T10:10:00.000Z,user4,2026-05-13T10:10:00.000Z,user4
-7c9b3c64-52d4-5e30-b2c7-80f64c38c205,4.80,14/05/2026,Resolucion magnifica perfecto para disenadores,6b8a2b53-41c3-4d29-a1b6-79e53b27b103,2026-05-14T08:45:00.000Z,user5,2026-05-14T08:45:00.000Z,user5
-7c9b3c64-52d4-5e30-b2c7-80f64c38c206,4.50,15/05/2026,Buen monitor aunque el soporte ocupa mucho espacio,6b8a2b53-41c3-4d29-a1b6-79e53b27b103,2026-05-15T11:20:00.000Z,user6,2026-05-15T11:20:00.000Z,user6
-7c9b3c64-52d4-5e30-b2c7-80f64c38c207,4.00,16/05/2026,El tacto del teclado es bueno pero es bastante ruidoso,6b8a2b53-41c3-4d29-a1b6-79e53b27b104,2026-05-16T16:05:00.000Z,user7,2026-05-16T16:05:00.000Z,user7
-7c9b3c64-52d4-5e30-b2c7-80f64c38c208,3.50,17/05/2026,Funciona bien pero la conexion inalambrica a veces falla,6b8a2b53-41c3-4d29-a1b6-79e53b27b105,2026-05-17T18:50:00.000Z,user8,2026-05-17T18:50:00.000Z,user8
-7c9b3c64-52d4-5e30-b2c7-80f64c38c209,4.90,18/05/2026,Muy comodo super ligero y la bateria es eterna,6b8a2b53-41c3-4d29-a1b6-79e53b27b105,2026-05-18T09:30:00.000Z,user9,2026-05-18T09:30:00.000Z,user9
-7c9b3c64-52d4-5e30-b2c7-80f64c38c210,4.60,19/05/2026,Me ayudo mucho con mis dolores de espalda vale la pena,6b8a2b53-41c3-4d29-a1b6-79e53b27b106,2026-05-19T13:15:00.000Z,user10,2026-05-19T13:15:00.000Z,user10
-7c9b3c64-52d4-5e30-b2c7-80f64c38c211,5.00,20/05/2026,Facil de armar y muy estable,6b8a2b53-41c3-4d29-a1b6-79e53b27b107,2026-05-20T10:00:00.000Z,user11,2026-05-20T10:00:00.000Z,user11
-7c9b3c64-52d4-5e30-b2c7-80f64c38c212,4.80,21/05/2026,El motor del escritorio es silencioso y rapido,6b8a2b53-41c3-4d29-a1b6-79e53b27b107,2026-05-21T14:45:00.000Z,user12,2026-05-21T14:45:00.000Z,user12
-7c9b3c64-52d4-5e30-b2c7-80f64c38c213,4.20,22/05/2026,Buen sonido pero aprietan un poco despues de horas de uso,6b8a2b53-41c3-4d29-a1b6-79e53b27b108,2026-05-22T17:20:00.000Z,user13,2026-05-22T17:20:00.000Z,user13
-7c9b3c64-52d4-5e30-b2c7-80f64c38c214,4.50,23/05/2026,La cancelacion de ruido es brutal por este precio,6b8a2b53-41c3-4d29-a1b6-79e53b27b108,2026-05-23T08:10:00.000Z,user14,2026-05-23T08:10:00.000Z,user14
-7c9b3c64-52d4-5e30-b2c7-80f64c38c215,4.30,24/05/2026,Excelente captura de voz ideal para mis transmisiones,6b8a2b53-41c3-4d29-a1b6-79e53b27b109,2026-05-24T12:35:00.000Z,user15,2026-05-24T12:35:00.000Z,user15
-7c9b3c64-52d4-5e30-b2c7-80f64c38c216,4.00,25/05/2026,Cumple su funcion aunque la imagen con poca luz granulada,6b8a2b53-41c3-4d29-a1b6-79e53b27b110,2026-05-25T09:50:00.000Z,user16,2026-05-25T09:50:00.000Z,user16
-7c9b3c64-52d4-5e30-b2c7-80f64c38c217,4.80,26/05/2026,Transfiere archivos rapidisimo y es super ligero,6b8a2b53-41c3-4d29-a1b6-79e53b27b111,2026-05-26T15:25:00.000Z,user17,2026-05-26T15:25:00.000Z,user17
-7c9b3c64-52d4-5e30-b2c7-80f64c38c218,5.00,27/05/2026,Le dio una nueva vida a mi PC vieja 100% recomendado,6b8a2b53-41c3-4d29-a1b6-79e53b27b112,2026-05-27T11:40:00.000Z,user18,2026-05-27T11:40:00.000Z,user18
-7c9b3c64-52d4-5e30-b2c7-80f64c38c219,4.70,28/05/2026,Reconocio el perfil XMP a la primera cero problemas,6b8a2b53-41c3-4d29-a1b6-79e53b27b113,2026-05-28T14:15:00.000Z,user19,2026-05-28T14:15:00.000Z,user19
-7c9b3c64-52d4-5e30-b2c7-80f64c38c220,4.90,29/05/2026,Corre todos mis juegos en ultra sin sudar,6b8a2b53-41c3-4d29-a1b6-79e53b27b114,2026-05-29T19:05:00.000Z,user20,2026-05-29T19:05:00.000Z,user20
-7c9b3c64-52d4-5e30-b2c7-80f64c38c221,4.50,30/05/2026,Buena placa base pero la BIOS es un poco confusa,6b8a2b53-41c3-4d29-a1b6-79e53b27b115,2026-05-30T08:30:00.000Z,user21,2026-05-30T08:30:00.000Z,user21
-7c9b3c64-52d4-5e30-b2c7-80f64c38c222,4.30,01/06/2026,Muy util para mi Mac todos los puertos funcionan perfecto,6b8a2b53-41c3-4d29-a1b6-79e53b27b116,2026-06-01T10:10:00.000Z,user22,2026-06-01T10:10:00.000Z,user22
-7c9b3c64-52d4-5e30-b2c7-80f64c38c223,4.80,02/06/2026,Carga mi laptop y mi celular al mismo tiempo sin problema,6b8a2b53-41c3-4d29-a1b6-79e53b27b117,2026-06-02T13:55:00.000Z,user23,2026-06-02T13:55:00.000Z,user23
-7c9b3c64-52d4-5e30-b2c7-80f64c38c224,4.10,03/06/2026,Protege bien aunque los cierres se sienten algo fragiles,6b8a2b53-41c3-4d29-a1b6-79e53b27b118,2026-06-03T16:20:00.000Z,user24,2026-06-03T16:20:00.000Z,user24
-7c9b3c64-52d4-5e30-b2c7-80f64c38c225,4.70,04/06/2026,Excelente luz para leer de noche no cansa la vista,6b8a2b53-41c3-4d29-a1b6-79e53b27b119,2026-06-04T20:45:00.000Z,user25,2026-06-04T20:45:00.000Z,user25
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c7001,4.90,2026-01-01,Excellent,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c6001,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c7002,4.70,2026-01-02,Great Product,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c6001,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c7003,4.80,2026-01-03,Recommended,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c6002,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin

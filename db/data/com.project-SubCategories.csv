@@ -1,1 +1,10 @@
 ID,subCategory,category_ID,createdAt,createdBy,modifiedAt,modifiedBy
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c2001,Laptops,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c1001,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c2002,Smartphones,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c1001,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c2003,Accessories,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c1001,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c2004,Refrigerators,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c1002,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c2005,Washing Machines,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c1002,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c2006,Microwaves,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c1002,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c2007,Bicycles,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c1003,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c2008,Gym Equipment,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c1003,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c2009,Sports Wear,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c1003,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin

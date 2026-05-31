@@ -1,1 +1,4 @@
 ID,stockNumber,department,nim,max,target,quatity,baseUnit,product_ID,createdAt,createdBy,modifiedAt,modifiedBy
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c8001,STK001,Warehouse A,10,100,50,30.000,EA,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c6001,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c8002,STK002,Warehouse B,5,50,25,12.000,EA,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c6001,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c8003,STK003,Warehouse A,15,100,50,40.000,EA,4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c6002,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin

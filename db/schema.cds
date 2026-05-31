@@ -108,7 +108,7 @@ entity status : CodeList {
     key code : String(20) enum {
             inStock = 'In Stock';
             OutOfStock = ' Not In Stock';
-            lowAvailability = 'low Availability';
+            lowAvailability = 'Low Availability';
 
         }
 

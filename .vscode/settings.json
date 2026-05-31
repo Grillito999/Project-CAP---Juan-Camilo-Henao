@@ -3,7 +3,7 @@
         {
             "previewLimit": 50,
             "driver": "SQLite",
-            "name": "Products",
+            "name": "products",
             "database": "${workspaceFolder:CAP_PROJECT_MASTER}/products.sqlite"
         }
     ]

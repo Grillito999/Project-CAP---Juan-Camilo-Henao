@@ -1,1 +1,6 @@
 ID,baseUnit,height,width,depth,weight,unitVolume,unitweight,createdAt,createdBy,modifiedAt,modifiedBy
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c5001,EA,10,20,2,1.2,EA,KG,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c5002,EA,12,24,2.5,1.4,EA,KG,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c5003,EA,14,28,3,1.6,EA,KG,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c5004,EA,16,32,3.5,1.8,EA,KG,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c5005,EA,18,36,4,2.0,EA,KG,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
