@@ -1,4 +1,4 @@
-code,name,descr
-In Stock,In Stock, In Stock
-Not In Stock,Not In Stock, Not In Stock
-Low Availability,Low Availability,Low Availability
+code,name,descr,Criticality
+InStock,In Stock, In Stock,3
+NotInStock,Not In Stock, Not In Stock,1
+LowAvailability,Low Availability,Low Availability,2

@@ -1,15 +1,11 @@
 // Se referencia el servicio al cual se le realiza la publicación
 using {my_service as service} from '../service';
 
-
 annotate service.Products with {
 
-    product     @title            : 'Product';
+    product     @title            : 'Product'; // Se implementan las anotaciones de título para mostrar un título personalizado en la aplicación FIORI
     productName @title            : 'Product Name';
     decription  @title            : 'Description';
-    category    @title            : 'Category';
-    subCategory @title            : 'Sub Category';
-    status      @title            : 'Status';
     rating      @title            : 'Rating';
     price       @title: 'Price'  @Measures.ISOCurrency: currency;
     currency    @Common.IsCurrency: true;
@@ -18,7 +14,7 @@ annotate service.Products with {
 
 annotate service.Products with @(
 
-    UI.DataPoint #Rating: {
+    UI.DataPoint #Rating: { // Se implementan las anotaciones de DataPoint para mostrar el campo rating como una valoración por estrellas en la aplicación FIORI
         Value        : rating,
         Criticality  : {
             High  : 5,
@@ -28,15 +24,47 @@ annotate service.Products with @(
         Visualization: #Rating
     },
 
+    UI.HeaderInfo       : { // Se implementan las anotaciones de HeaderInfo para mostrar información relevante en el encabezado de la aplicación FIORI
+        $Type         : 'UI.HeaderInfoType',
+        TypeName      : 'Product',
+        TypeNamePlural: 'Products',
+
+    },
+
+    UI.SelectionFields  : [ // Filtros que se muestran en la parte superior de la aplicación FIORI
+        product,
+        productName,
+        category.category,
+        subCategory.subCategory,
+        status.code,
+        supplier.supplierName
+    ], 
+
+    // Capabilities.FilterRestrictions: { // Se implementan las anotaciones de FilterRestrictions para restringir los filtros que se pueden aplicar en la aplicación FIORI
+    
+    // $Type : 'Capabilities.FilterRestrictionsType',
+    
+    // FilterExpressionRestrictions: [
+    //     {
+    //         $Type: 'Capabilities.FilterExpressionRestrictionsType',
+    //        Property : product,
+    //         AllowedExpressions: [ 'EQ' ] // Se permiten las expresiones de comparación para el campo price en los filtros de la aplicación FIORI
+    //     }
+    // ]
+
+
+    // },
 
     UI.LineItem         : [ // se referencia la entidad a la cual le vamos a implementar las anotaciones FIORI
 
         {
             $Type                : 'UI.DataField',
+            // Se implementan las anotaciones de LineItem para mostrar los campos en la vista de lista de la aplicación FIORI
             Value                : ID,
             label                : 'ID',
             @UI.Hidden           : true,
-            ![@HTML5.CssDefaults]: {width: '10rem'}
+            // Se oculta el campo ID en la aplicación FIORI
+            ![@HTML5.CssDefaults]: {width: '10rem'} // Se asigna un ancho específico para el campo ID en la aplicación FIORI
         },
         {
             $Type                : 'UI.DataField',
@@ -64,24 +92,32 @@ annotate service.Products with @(
         },
         {
             $Type                : 'UI.DataField',
-            Value                : category_ID,
+            Value                : category.category,
             label                : 'Category',
             @UI.Importance       : #Medium,
-            ![@HTML5.CssDefaults]: {width: '10rem'}
+            ![@HTML5.CssDefaults]: {width: '9rem'}
         },
 
         {
             $Type                : 'UI.DataField',
-            Value                : subCategory_ID,
+            Value                : subCategory.subCategory,
             label                : 'Sub Category',
             @UI.Importance       : #Low,
-            ![@HTML5.CssDefaults]: {width: '10rem'}
+            ![@HTML5.CssDefaults]: {width: '9rem'}
         },
 
         {
             $Type                : 'UI.DataField',
-            Value                : status_code,
+            Value                : supplier.supplierName,
+            label                : 'Supplier',
+            ![@HTML5.CssDefaults]: {width: '8rem'}
+        },
+
+        {
+            $Type                : 'UI.DataField',
+            Value                : status.code,
             label                : 'Status',
+            Criticality          : status.criticality,
             @UI.Importance       : #High,
             ![@HTML5.CssDefaults]: {width: '8rem'}
         },
@@ -96,8 +132,10 @@ annotate service.Products with @(
 
         {
             $Type                : 'UI.DataFieldForAnnotation',
+            // Se implementan las anotaciones de DataFieldForAnnotation para mostrar el campo rating como una valoración por estrellas
             Label                : 'Rating',
             Target               : '@UI.DataPoint#Rating',
+            // Se referencia el DataPoint que se implementó anteriormente para mostrar el campo rating como una valoración por estrellas en la aplicación FIORI
             @UI.Importance       : #Low,
             ![@HTML5.CssDefaults]: {width: '10rem'}
         },
@@ -115,7 +153,7 @@ annotate service.Products with @(
             Value                : createdAt,
             label                : 'Created At',
             @UI.Importance       : #Low,
-            ![@HTML5.CssDefaults]: {width: '6rem'}
+            ![@HTML5.CssDefaults]: {width: '10rem'}
         },
 
         {
@@ -123,7 +161,7 @@ annotate service.Products with @(
             Value                : modifiedBy,
             label                : 'Modified By',
             @UI.Importance       : #Low,
-            ![@HTML5.CssDefaults]: {width: '4rem'}
+            ![@HTML5.CssDefaults]: {width: '10rem'}
         },
 
         {
@@ -131,7 +169,7 @@ annotate service.Products with @(
             Value                : modifiedAt,
             label                : 'Modified At',
             @UI.Importance       : #Low,
-            ![@HTML5.CssDefaults]: {width: '6rem'}
+            ![@HTML5.CssDefaults]: {width: '10rem'}
         },
 
         {
@@ -146,14 +184,6 @@ annotate service.Products with @(
             $Type                : 'UI.DataField',
             Value                : detail,
             label                : 'Details',
-            @UI.Hidden           : true,
-            ![@HTML5.CssDefaults]: {width: '10rem'}
-        },
-
-        {
-            $Type                : 'UI.DataField',
-            Value                : supplier,
-            label                : 'Supplier',
             @UI.Hidden           : true,
             ![@HTML5.CssDefaults]: {width: '10rem'}
         },
@@ -228,6 +258,32 @@ annotate service.Products with @(
             @UI.Hidden           : true,
             ![@HTML5.CssDefaults]: {width: '10rem'}
         },
+
+        {
+
+            $Type                : 'UI.DataField',
+            Value                : category_ID,
+            label                : 'Category ID',
+            @UI.Hidden           : true,
+            ![@HTML5.CssDefaults]: {width: '7rem'}
+
+
+        },
+        {
+            $Type                : 'UI.DataField',
+            Value                : subCategory_ID,
+            label                : 'Sub Category ID',
+            @UI.Hidden           : true,
+            ![@HTML5.CssDefaults]: {width: '7rem'}
+        },
+
+        {
+            $Type                : 'UI.DataField',
+            Value                : status_code,
+            label                : 'Status Code',
+            @UI.Hidden           : true,
+            ![@HTML5.CssDefaults]: {width: '7rem'}
+        }
 
     ],
 

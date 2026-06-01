@@ -95,7 +95,7 @@ entity Categories : cuid, managed { //Entidad de matchcode/value help
                           on tosubCategories.category = $self; // $SELF indica que se usa el campo ID
 };
 
-entity SubCategories : cuid, managed { //Entidad de matchcode/value help
+entity SubCategories : cuid, managed { // Entidad de matchcode/value help
 
     subCategory : String(80);
     category    : Association to Categories;
@@ -103,13 +103,15 @@ entity SubCategories : cuid, managed { //Entidad de matchcode/value help
 
 // Code List: listado corto de max 3 opciones
 
-entity status : CodeList {
+entity status : CodeList { // Se implementa la entidad de CodeList para generar un listado corto unicamente de 3 campos
 
-    key code : String(20) enum {
+    key code        : String(20) enum {
             inStock = 'In Stock';
             OutOfStock = ' Not In Stock';
             lowAvailability = 'Low Availability';
 
-        }
+        };
+
+        criticality : Integer; // Campo para definir la criticidad de cada estado, se usara en FIORI para mostrar colores.
 
 }
