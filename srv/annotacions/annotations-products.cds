@@ -7,10 +7,71 @@ annotate service.Products with {
     productName @title            : 'Product Name';
     decription  @title            : 'Description';
     rating      @title            : 'Rating';
+    category    @title            : 'Category';
+    subCategory @title            : 'Sub Category';
+    status      @title            : 'Status';
     price       @title: 'Price'  @Measures.ISOCurrency: currency;
     currency    @Common.IsCurrency: true;
+    supplier    @title            : 'Supplier';
 
 };
+
+annotate service.Products with {
+
+    status
+
+             @Common.ValueListWithFixedValues: true // Se implementan las anotaciones de ValueListWithFixedValues para mostrar una lista de valores fijos en la aplicación FIOR
+             @(Common: {
+
+        ValueListWithFixedValue: true,
+
+        ValueList              : {
+            $Type         : 'Common.ValueListType',
+            CollectionPath: 'Status',
+            Parameters    : [
+
+            {
+                $Type            : 'Common.ValueListParameterInOut',
+                LocalDataProperty: status_code,
+                ValueListProperty: 'code',
+            }
+
+            ]
+        }
+
+    });
+
+    supplier @(Common: {
+
+    ValueList: {
+        $Type         : 'Common.ValueListType',
+        CollectionPath: 'Suppliers',
+        Parameters    : [
+
+            {
+                $Type            : 'Common.ValueListParameterInOut',
+                LocalDataProperty: supplier.supplier,
+                ValueListProperty: 'supplier',
+
+            },
+            {
+                $Type            : 'Common.ValueListParameterInOut',
+                LocalDataProperty: supplier_ID,
+                ValueListProperty: 'ID',
+            },
+            {
+                $Type            : 'Common.ValueListParameterInOut',
+                LocalDataProperty: supplier.webAdress,
+                ValueListProperty: 'webAdress'
+            }
+        ]
+    },
+
+    });
+
+
+};
+
 
 annotate service.Products with @(
 
@@ -34,16 +95,16 @@ annotate service.Products with @(
     UI.SelectionFields  : [ // Filtros que se muestran en la parte superior de la aplicación FIORI
         product,
         productName,
-        category.category,
-        subCategory.subCategory,
-        status.code,
-        supplier.supplierName
-    ], 
+        category_ID,
+        subCategory_ID,
+        status_code,
+        supplier_ID
+    ],
 
     // Capabilities.FilterRestrictions: { // Se implementan las anotaciones de FilterRestrictions para restringir los filtros que se pueden aplicar en la aplicación FIORI
-    
+
     // $Type : 'Capabilities.FilterRestrictionsType',
-    
+
     // FilterExpressionRestrictions: [
     //     {
     //         $Type: 'Capabilities.FilterExpressionRestrictionsType',

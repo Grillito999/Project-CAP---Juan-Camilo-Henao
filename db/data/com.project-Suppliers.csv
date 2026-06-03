@@ -1,5 +1,5 @@
 ID,supplier,supplierName,webAdress,createdAt,createdBy,modifiedAt,modifiedBy
-4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c3001,SUP000001,Dell,https://dell.com,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
+4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c3001,SUP000001,Dell,www.dell.com,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
 4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c3002,SUP000002,HP,https://hp.com,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
 4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c3003,SUP000003,Lenovo,https://lenovo.com,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
 4c2f3d44-7e6e-4f7d-9f4c-3d8e0b4c3004,SUP000004,Samsung,https://samsung.com,2026-01-15T08:30:00Z,admin,2026-01-15T08:30:00Z,admin
